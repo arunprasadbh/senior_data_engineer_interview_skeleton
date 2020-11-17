@@ -1,0 +1,31 @@
+
+# For more information on how to configure this file, please see:
+# https://docs.getdbt.com/docs/profile
+
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: mintel.us-east-1
+      user: DATA_ENGINEER_INTERVIEW
+      password:
+
+      role: DATA_ENGINEER_INTERVIEW
+      database: DATA_ENGINEER_INTERVIEW
+      warehouse: DATA_ENGINEER_INTERVIEW
+      schema: DATA_ENGINEER_INTERVIEW
+
+      threads: 4
+
+connection_test:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: mintel.us-east-1
+      user: DATA_ENGINEER_INTERVIEW_CONNECTION_TEST
+      password: ohGu8waL
+
+      database: SNOWFLAKE_SAMPLE_DATA
+      schema: DUMMY

@@ -1,0 +1,18 @@
+version: 2
+  
+sources:
+
+  - name: cpg
+    database: DATA_ENGINEER_INTERVIEW
+    schema: DATA_ENGINEER_INTERVIEW_SOURCE
+    tables:
+      - name: lk_country
+      - name: links_country
+      - name: item
+      - name: product
+      - name: lk_launch_type
+      - name: links_category_sub
+      - name: flavour_blend
+      - name: lk_category
+      - name: flavour_blend_contents
+      - name: lk_flavours
